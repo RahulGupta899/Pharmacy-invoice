@@ -2,9 +2,18 @@ const button = document.querySelector('.btn');
 const csvButton = document.querySelector('.csvButton')
 const tableRows = document.querySelector('.table_rows')
 
+
 const buyer = document.querySelector('.buyer')
 const date = document.querySelector('.date')
 const invoiceNo = document.querySelector('.invoiceNo')
+const phoneNo = document.querySelector('.phoneNo');
+const subTotal = document.querySelector('.subTotal')
+
+console.log(buyer)
+console.log(date)
+console.log(invoiceNo)
+console.log(phoneNo)
+console.log(subTotal)
 
 
 
@@ -23,11 +32,14 @@ function exportCSV(){
     const buyerValue = buyer.value;
     const dateValue = date.value;
     const invoiceValue = invoiceNo.value
+    const phoneValue = phoneNo.value
+    const subTotalValue = subTotal.value
+
 
     const csvData = []
 
-    csvData.push(["Buyer's Name", "Date", "Invoice No"])
-    csvData.push([buyerValue, dateValue, invoiceValue])
+    csvData.push(["Buyer's Name", "Date","Phone Number", "Invoice No",  "Sub Total"])
+    csvData.push([buyerValue, dateValue, phoneValue, invoiceValue, subTotalValue])
     csvData.push([])
     csvData.push([])
 

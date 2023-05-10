@@ -24,14 +24,14 @@ body{
 .dataContainer{
     padding:20px;
     display:flex;
-    height: 170px;
+    height: 190px;
     justify-content: space-evenly;
     flex-direction: column;
 }
 .tableContainer{
     padding:20px;
     padding-top: 0px;
-    height:50%;
+    height:45%;
     width:100%;  
     overflow-y: scroll; 
 }
@@ -44,7 +44,6 @@ body{
 
 .btn{
     height:35px;
-    /* margin-left:80%; */
     margin-top:10px;
     text-decoration: none;
     font-weight: 550;
